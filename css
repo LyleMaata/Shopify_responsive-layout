@@ -1,0 +1,167 @@
+/* background images */
+
+#background1 img {
+    position: fixed ;
+    display: flex;
+    left: 10px;
+    top: 170px;
+    width: 50%;
+    height: auto;
+    animation-name: bike;
+    animation-duration: 2s;
+
+}
+
+@keyframes bike {
+    0% {left:-900px;}
+    100% {left: 10px;}
+}
+
+#background2 img {
+    width: 1875px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.9;
+    animation-name: bg;
+    animation-duration: 2s;
+}
+
+@keyframes bg {
+    0%{opacity: 0;}
+    100% {opacity: 0.9;}
+}
+/* height and framework */
+
+body {
+    height:auto;
+    overflow: hidden;
+}
+
+/*tablet view 336 X 1090 */
+@media screen and (max-width: 1300px) {
+#background1 img{
+    display: none;
+  }
+}
+
+/* text and services */
+
+.container {
+     float: right;
+}
+
+p {
+    position: relative;
+    top: 100px;
+    right: 400px;
+    overflow-wrap:  break-word;
+    background-color: WhiteSmoke;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:   2px 5px 5px grey;
+    width: 700px;
+    z-index:  1;
+    animation-name: paragraph;
+    animation-duration: 2s;
+
+}
+
+@keyframes paragraph {
+    0% {left: -1000;}
+    100%{left: -400;}
+}
+
+.container h1 {
+    position: relative;
+    top: 100px;
+    right: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: WhiteSmoke;
+    box-shadow:   2px 5px 5px grey;
+    border-radius: 10px;
+    animation-name: services;
+    animation-duration: 2s;
+
+}
+
+@keyframes services {
+    0%{right: -1000;}
+    100%{right: 400;}
+}
+
+#services button {
+    position: relative;
+    right: 200px;
+    display: flex;
+    justify-content: center;
+    border:none;
+    top: 200px;
+    padding: 20px;
+    width: 200px;
+    background-color: crimson;
+    border-radius: 10px;
+    color: white;
+    box-shadow:   2px 5px 5px grey;
+    z-index: 1;
+    animation-name: button;
+    animation-duration: 2s;
+}
+
+@keyframes button {
+    0% {top: -1000;}
+    100% {top: 200;}
+}
+
+#services button:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 780px) {
+
+@keyframes paragraph {
+        0% {opacity: 0;}
+        100%{opacity: 1;}
+}
+
+    #services button {
+       float: right;
+       transition: 0.5s;
+       position: relative;
+       right: 140px;
+}
+
+
+#services p  {
+    float: right;
+    position: relative;
+    left: 10px;
+    word-wrap: break-word;
+    width: 450px;
+    height: 280px;
+    transition: 0.5s;
+ }
+
+ @keyframes services {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+ .container h1  {
+    float: right;
+    position: relative;
+    right: -20px;
+    word-wrap: break-word;
+    width: 455px;
+    margin-top: 0;
+    margin-right: 25px;
+    text-align: center;
+    transition: 0.5s;
+ }
+ 
+}
