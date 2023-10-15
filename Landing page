@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device=width, initial-scale=1">
+    <link rel="stylesheet" href="test.css">
+    <title>TEST RIDE</title>
+
+</head>
+<body>
+ <div class="container">
+    <h1>ACTIVE MOBILITY FOR A HEALTHIER YOU</h1>
+  <div id="services">
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <button id="btn">BOOK A TEST RIDE</button>
+  </div>  
+  </div>
+  <div id="background1">
+    <img src="motor.png">
+  </div>
+  <div id="background2">
+    <img src="rider.jpg">
+  </div>
+
+   
+ </div>   
+<script>
+  let button = document.getElementById("btn").innerHTML
+
+  btn.addEventListener("click", function(){
+     window.prompt("PLEASE TYPE YOUR NAME")
+
+  })
+</script>
+</body>
+</html>
